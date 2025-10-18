@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdSphere - Diwali Sale 2025 | IIT-JEE, UPSC, NEET Preparation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .animate-pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+        
+        .animate-spin-slow {
+            animation: spin-slow 3s linear infinite;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(to right, #ea580c, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .sparkle {
+            position: absolute;
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+        
+        .festive-glow {
+            box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+        }
+        
+        .mobile-menu {
+            display: none;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .testimonial-carousel {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .testimonial-item {
+            min-width: 100%;
+            transition: transform 0.5s ease;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-orange-50 via-amber-50 to-purple-50">
+    
+    <!-- Navbar -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b-4 border-orange-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <div class="text-3xl">🪔</div>
+                    <span class="text-2xl font-bold gradient-text">EdSphere</span>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="#courses" class="text-gray-700 hover:text-orange-600 font-medium transition">Courses</a>
+                    <a href="#offers" class="text-gray-700 hover:text-orange-600 font-medium transition">Offers</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-orange-600 font-medium transition">Reviews</a>
+                    <button class="px-4 py-2 text-orange-600 font-medium hover:bg-orange-50 rounded-lg transition">Login</button>
+                    <button class="px-6 py-2 bg-gradient-to-r from-orange-500 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg transform hover:-translate-y-0.5 transition">
+                        Sign Up
+                    </button>
+                </div>
+
+                <button id="mobileMenuBtn" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="mobile-menu md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#courses" class="block text-gray-700 hover:text-orange-600 font-medium">Courses</a>
+                <a href="#offers" class="block text-gray-700 hover:text-orange-600 font-medium">Offers</a>
+                <a href="#testimonials" class="block text-gray-700 hover:text-orange-600 font-medium">Reviews</a>
+                <button class="w-full px-4 py-2 text-orange-600 font-medium border border-orange-600 rounded-lg">Login</button>
+                <button class="w-full px-4 py-2 bg-gradient-to-r from-orange-500 to-purple-600 text-white rounded-lg font-medium">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-20 px-4">
+        <div id="sparkles" class="absolute inset-0 opacity-20"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center gap-2 bg-orange-100 px-4 py-2 rounded-full mb-6">
+                    <span class="text-orange-600 text-xl">🔥</span>
+                    <span class="text-orange-700 font-semibold">Diwali Special Sale</span>
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 gradient-text leading-tight">
+                    Crack IIT-JEE & UPSC with a<br>Diwali Spark! ✨
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
+                    <span class="font-bold text-orange-600">Flat 50% Off</span> on All Test Series & Courses<br>
+                    <span class="text-lg text-gray-600">Offer Ends Oct 31</span>
+                </p>
+
+                <!-- Countdown Timer -->
+                <div class="flex justify-center gap-4 mb-8 flex-wrap">
+                    <div class="bg-white rounded-xl shadow-lg p-4 min-w-[80px]">
+                        <div id="days" class="text-3xl font-bold text-orange-600">13</div>
+                        <div class="text-sm text-gray-600 uppercase">Days</div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-4 min-w-[80px]">
+                        <div id="hours" class="text-3xl font-bold text-orange-600">05</div>
+                        <div class="text-sm text-gray-600 uppercase">Hours</div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-4 min-w-[80px]">
+                        <div id="minutes" class="text-3xl font-bold text-orange-600">23</div>
+                        <div class="text-sm text-gray-600 uppercase">Minutes</div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-4 min-w-[80px]">
+                        <div id="seconds" class="text-3xl font-bold text-orange-600">45</div>
+                        <div class="text-sm text-gray-600 uppercase">Seconds</div>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="max-w-md mx-auto mb-8">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm text-gray-600">🔥 Limited Seats</span>
+                        <span id="enrolledCount" class="text-sm font-bold text-orange-600">2,134 enrolled</span>
+                    </div>
+                    <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                        <div class="h-full bg-gradient-to-r from-orange-500 to-purple-600 rounded-full animate-pulse-glow" style="width: 73%"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="px-8 py-4 bg-gradient-to-r from-orange-500 to-purple-600 text-white rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition">
+                        Grab Offer Now →
+                    </button>
+                    <button class="px-8 py-4 bg-white text-orange-600 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl border-2 border-orange-500 transition">
+                        Explore Courses
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <div class="text-6xl mb-4 animate-float">🎓</div>
+                <p class="text-gray-600 italic">Where Preparation Meets Celebration</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-16 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Featured Test Series & Courses</h2>
+                <p class="text-gray-600 text-lg">Choose from India's most comprehensive exam preparation programs</p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button onclick="filterCourses('All')" class="category-btn px-6 py-2 rounded-full font-medium transition bg-gradient-to-r from-orange-500 to-purple-600 text-white shadow-lg">All</button>
+                <button onclick="filterCourses('IIT-JEE')" class="category-btn px-6 py-2 rounded-full font-medium transition bg-gray-100 text-gray-700 hover:bg-gray-200">IIT-JEE</button>
+                <button onclick="filterCourses('UPSC')" class="category-btn px-6 py-2 rounded-full font-medium transition bg-gray-100 text-gray-700 hover:bg-gray-200">UPSC</button>
+                <button onclick="filterCourses('NEET')" class="category-btn px-6 py-2 rounded-full font-medium transition bg-gray-100 text-gray-700 hover:bg-gray-200">NEET</button>
+                <button onclick="filterCourses('SSC')" class="category-btn px-6 py-2 rounded-full font-medium transition bg-gray-100 text-gray-700 hover:bg-gray-200">SSC</button>
+                <button onclick="filterCourses('Banking')" class="category-btn px-6 py-2 rounded-full font-medium transition bg-gray-100 text-gray-700 hover:bg-gray-200">Banking</button>
+                <button onclick="filterCourses('NDA')" class="category-btn px-6 py-2 rounded-full font-medium transition bg-gray-100 text-gray-700 hover:bg-gray-200">NDA</button>
+            </div>
+
+            <!-- Course Cards -->
+            <div id="courseContainer" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+    </section>
+
+    <!-- Combo Offers -->
+    <section id="offers" class="py-16 px-4 bg-gradient-to-br from-orange-50 to-purple-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 bg-red-100 px-4 py-2 rounded-full mb-4">
+                    <span class="text-red-600 text-xl">🔥</span>
+                    <span class="text-red-700 font-semibold">Limited Time Combo Deals</span>
+                </div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Diwali Combo Offers</h2>
+                <p class="text-gray-600 text-lg">Save more with our specially curated bundles</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-xl p-8 border-4 border-orange-400 relative overflow-hidden group hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold animate-pulse-glow">BESTSELLER</div>
+                    <div class="text-5xl mb-4">🎁</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">IIT-JEE + NEET Combo</h3>
+                    <div class="mb-6">
+                        <div class="flex items-baseline gap-2 mb-2">
+                            <span class="text-4xl font-bold text-orange-600">₹4,999</span>
+                            <span class="text-xl text-gray-500 line-through">₹10,998</span>
+                        </div>
+                        <p class="text-green-600 font-semibold">You Save ₹6,000!</p>
+                    </div>
+                    <button class="w-full px-6 py-3 bg-gradient-to-r from-orange-500 to-purple-600 text-white rounded-xl font-bold hover:shadow-lg transition">Grab Combo Deal</button>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 border-4 border-orange-400 relative overflow-hidden group hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold animate-pulse-glow">BESTSELLER</div>
+                    <div class="text-5xl mb-4">🎁</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">UPSC + SSC Super Saver</h3>
+                    <div class="mb-6">
+                        <div class="flex items-baseline gap-2 mb-2">
+                            <span class="text-4xl font-bold text-orange-600">₹4,999</span>
+                            <span class="text-xl text-gray-500 line-through">₹11,998</span>
+                        </div>
+                        <p class="text-green-600 font-semibold">You Save ₹7,000!</p>
+                    </div>
+                    <button class="w-full px-6 py-3 bg-gradient-to-r from-orange-500 to-purple-600 text-white rounded-xl font-bold hover:shadow-lg transition">Grab Combo Deal</button>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 border-4 border-orange-400 relative overflow-hidden group hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold animate-pulse-glow">BESTSELLER</div>
+                    <div class="text-5xl mb-4">🎁</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">All Exams Master Pack</h3>
+                    <div class="mb-6">
+                        <div class="flex items-baseline gap-2 mb-2">
+                            <span class="text-4xl font-bold text-orange-600">₹9,999</span>
+                            <span class="text-xl text-gray-500 line-through">₹25,995</span>
+                        </div>
+                        <p class="text-green-600 font-semibold">You Save ₹15,996!</p>
+                    </div>
+                    <button class="w-full px-6 py-3 bg-gradient-to-r from-orange-500 to-purple-600 text-white rounded-xl font-bold hover:shadow-lg transition">Grab Combo Deal</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Why Choose EdSphere?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-orange-50 to-orange-100 hover:shadow-xl transition">
+                    <div class="text-6xl mb-4">👨‍🏫</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">India's Top Educators</h3>
+                    <p class="text-gray-600">Learn from IITians, UPSC toppers, and subject matter experts with proven track records</p>
+                </div>
+                
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100 hover:shadow-xl transition">
+                    <div class="text-6xl mb-4">📊</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Real Exam-Level Tests</h3>
+                    <p class="text-gray-600">Mock tests designed to match actual exam patterns and difficulty levels</p>
+                </div>
+                
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-pink-50 to-pink-100 hover:shadow-xl transition">
+                    <div class="text-6xl mb-4">🤖</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">AI Performance Analysis</h3>
+                    <p class="text-gray-600">Get detailed insights on your strengths, weaknesses, and improvement areas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Success Stories</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition">
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-500 text-xl">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"EdSphere test series exactly matched JEE pattern!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">A</div>
+                        <div>
+                            <div class="font-bold text-gray-900">Arjun Sharma</div>
+                            <div class="text-sm text-gray-600">IIT-JEE 2024</div>
+                            <div class="text-sm font-semibold text-orange-600">AIR 247</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition">
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-500 text-xl">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"Best investment for UPSC preparation. Worth every penny!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">P</div>
+                        <div>
+                            <div class="font-bold text-gray-900">Priya Verma</div>
+                            <div class="text-sm text-gray-600">UPSC CSE 2024</div>
+                            <div class="text-sm font-semibold text-orange-600">AIR 89</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition">
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-500 text-xl">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"Mock tests were harder than actual exam. Great practice!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">R</div>
+                        <div>
+                            <div class="font-bold text-gray-900">Rohit Kumar</div>
+                            <div class="text-sm text-gray-600">NEET 2024</div>
+                            <div class="text-sm font-semibold text-orange-600">AIR 456</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 px-4 bg-gradient-to-r from-orange-500 via-purple-600 to-pink-600 relative overflow-hidden">
+        <div id="ctaSparkles" class="absolute inset-0 opacity-20"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Light up your career with knowledge — Enroll this Diwali! 🪔
+            </h2>
+            <p class="text-xl text-white/90 mb-8">
+                Join thousands of successful students who trusted EdSphere for their exam preparation
+            </p>
+            <button onclick="openSpinModal()" class="px-10 py-5 bg-white text-purple-600 rounded-2xl font-bold text-xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition">
+                🎁 Spin the Lucky Diya for Extra Discount!
+            </button>
+        </div>
+    </section>
+
+    <!-- Lucky Spin Modal -->
+    <div id="spinModal" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-3xl p-8 max-w-md w-full text-center relative">
+            <button onclick="closeSpinModal()" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div id="diyaIcon" class="text-7xl mb-4">🪔</div>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4">Spin the Lucky Diya!</h3>
+            <p class="text-gray-600 mb-6">Click the diya to reveal your extra discount</p>
+            <button onclick="spinDiya()" class="px-8 py-4 bg-gradient-to-r from-orange-500 to-purple-600 text-white rounded-xl font-bold text-lg hover:shadow-lg transition">
+                Spin Now!
+            </button>
+        </div>
+    </div>
+
+    <!-- Discount Notification -->
+    <div id="discountNotification" class="hidden fixed bottom-8 right-8 bg-green-500 text-white px-6 py-4 rounded-xl shadow-2xl animate-float z-50">
+        <div class="text-2xl font-bold">🎉 You won <span id="discountValue">10</span>% extra discount!</div>
+        <div class="text-sm">Use code: DIYA<span id="discountCode">10</span></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-3xl">🪔</span>
+                        <span class="text-2xl font-bold">EdSphere</span>
+                    </div>
+                    <p class="text-gray-400">Where Preparation Meets Celebration 🎓</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="block text-gray-400 hover:text-white transition">About Us</a>
+                        <a href="#" class="block text-gray-400 hover:text-white transition">Courses</a>
+                        <a href="#" class="block text-gray-400 hover:text-white transition">Test Series</a>
+                        <a href="#" class="block text-gray-400 hover:text-white transition">Success Stories</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="block text-gray-400 hover:text-white transition">Help Center</a>
+                        <a href="#" class="block text-gray-400 hover:text-white transition">Terms of Service</a>
+                        <a href="#" class="block text-gray-400 hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="block text-gray-400 hover:text-white transition">Contact Us</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Connect With Us</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition">📘</a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition">🐦</a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition">📷</a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition">💼</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>© 2025 EdSphere. All rights reserved. Made with ❤️ in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Course Data
+        const courses = [
+            { id: 1, title: 'IIT-JEE Complete Test Series', category: 'IIT-JEE', price: 4999, discountPrice: 2499, rating: 4.8, students: 12450, image: '🎯' },
+            { id: 2, title: 'UPSC Prelims + Mains 2025', category: 'UPSC', price: 7999, discountPrice: 3999, rating: 4.9, students: 8920, image: '📚' },
+            { id: 3, title: 'NEET Complete Package', category: 'NEET', price: 5999, discountPrice: 2999, rating: 4.7, students: 15670, image: '🏥' },
+            { id: 4, title: 'SSC CGL Full Course', category: 'SSC', price: 3999, discountPrice: 1999, rating: 4.6, students: 9340, image: '💼' },
+            { id: 5, title: 'Banking PO Complete Series', category: 'Banking', price: 3499, discountPrice: 1749, rating: 4.5, students: 7680, image: '🏦' },
+            { id: 6, title: 'NDA Foundation Course', category: 'NDA', price: 4499, discountPrice: 2249, rating: 4.7, students: 5430, image: '⚔️' }
+        ];
+
+        let currentCategory = 'All';
+        let enrolledCount = 2134;
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            renderCourses();
+            startCountdown();
+            createSparkles();
+            startEnrollCounter();
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+        });
+
+        // Render Courses
+        function renderCourses() {
+            const container = document.getElementById('courseContainer');
+            const filteredCourses = currentCategory === 'All' 
+                ? courses 
+                : courses.filter(c => c.category === currentCategory);
+
+            container.innerHTML = filteredCourses.map(course => {
+                const discount = Math.round((1 - course.discountPrice / course.price) * 100);
+                return `
+                    <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+                        <div class="bg-gradient-to-br from-orange-100 to-purple-100 p-8 flex items-center justify-center">
+                            <div class="text-7xl">${course.image}</div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold">
+                                    ${course.category}
+                                </span>
+                                <div class="flex items-center gap-1">
+                                    <span class="text-yellow-500">⭐</span>
+                                    <span class="font-semibold">${course.rating}</span>
+                                </div>
+                            </div>
+                            
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">${course.title}</h3>
+                            
+                            <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+                                <span>👥</span>
+                                <span>${course.students.toLocaleString()} students</span>
+                            </div>
+                            
+                            <div class="flex items-baseline gap-3 mb-4">
+                                <span class="text-3xl font-bold text-orange-600">₹${course.discountPrice.toLocaleString()}</span>
+                                <span class="text-lg text-gray-500 line-through">₹${course.price.toLocaleString()}</span>
+                                <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-sm font-semibold">
+                                    ${discount}% OFF
+                                </span>
+                            </div>
+                            
+                            <button class="w-full px-6 py-3 bg-gradient-to-r from-orange-500 to-purple-600 text-white rounded-xl font-bold hover:shadow-lg transition">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Filter Courses
+        function filterCourses(category) {
+            currentCategory = category;
+            renderCourses();
+
+            // Update button styles
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.className = 'category-btn px-6 py-2 rounded-full font-medium transition bg-gray-100 text-gray-700 hover:bg-gray-200';
+            });
+            event.target.className = 'category-btn px-6 py-2 rounded-full font-medium transition bg-gradient-to-r from-orange-500 to-purple-600 text-white shadow-lg';
+        }
+
+        // Countdown Timer
+        function startCountdown() {
+            let days = 13, hours = 5, minutes = 23, seconds = 45;
+
+            setInterval(() => {
+                seconds--;
+                if (seconds < 0) {
+                    seconds = 59;
+                    minutes--;
+                }
+                if (minutes < 0) {
+                    minutes = 59;
+                    hours--;
+                }
+                if (hours < 0) {
+                    hours = 23;
+                    days--;
+                }
+                if (days < 0) {
+                    days = 0;
+                    hours = 0;
+                    minutes = 0;
+                    seconds = 0;
+                }
+
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            }, 1000);
+        }
+
+        // Enrolled Counter
+        function startEnrollCounter() {
+            setInterval(() => {
+                enrolledCount += Math.floor(Math.random() * 3);
+                document.getElementById('enrolledCount').textContent = enrolledCount.toLocaleString() + ' enrolled';
+            }, 5000);
+        }
+
+        // Create Sparkles
+        function createSparkles() {
+            const sparklesContainer = document.getElementById('sparkles');
+            const ctaSparkles = document.getElementById('ctaSparkles');
+            
+            for (let i = 0; i < 20; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.innerHTML = '✨';
+                sparkle.style.left = Math.random() * 100 + '%';
+                sparkle.style.top = Math.random() * 100 + '%';
+                sparkle.style.fontSize = (Math.random() * 10 + 15) + 'px';
+                sparkle.style.animationDelay = Math.random() * 2 + 's';
+                sparklesContainer.appendChild(sparkle);
+            }
+
+            for (let i = 0; i < 30; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.innerHTML = '✨';
+                sparkle.style.left = Math.random() * 100 + '%';
+                sparkle.style.top = Math.random() * 100 + '%';
+                sparkle.style.fontSize = (Math.random() * 15 + 10) + 'px';
+                sparkle.style.animationDelay = Math.random() * 3 + 's';
+                sparkle.style.animationDuration = '3s';
+                ctaSparkles.appendChild(sparkle);
+            }
+        }
+
+        // Lucky Spin Modal
+        function openSpinModal() {
+            document.getElementById('spinModal').classList.remove('hidden');
+        }
+
+        function closeSpinModal() {
+            document.getElementById('spinModal').classList.add('hidden');
+        }
+
+        function spinDiya() {
+            const diyaIcon = document.getElementById('diyaIcon');
+            diyaIcon.classList.add('animate-spin-slow');
+            
+            setTimeout(() => {
+                diyaIcon.classList.remove('animate-spin-slow');
+                const discounts = [10, 15, 20, 25, 30];
+                const randomDiscount = discounts[Math.floor(Math.random() * discounts.length)];
+                
+                document.getElementById('discountValue').textContent = randomDiscount;
+                document.getElementById('discountCode').textContent = randomDiscount;
+                
+                closeSpinModal();
+                showDiscountNotification();
+            }, 2000);
+        }
+
+        function showDiscountNotification() {
+            const notification = document.getElementById('discountNotification');
+            notification.classList.remove('hidden');
+            
+            setTimeout(() => {
+                notification.classList.add('hidden');
+            }, 5000);
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
